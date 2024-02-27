@@ -2,12 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TimeTravelDB | {{ date }}</title>
+    <title>Home Page</title>
 </head>
 <body>
-    <h1>Welcome to My Flask App</h1>
-    <p>This is a simple Flask application.</p>
-    <!-- Display today's date -->
-    <p>Today's date is: {{ date }}</p>
+    <!-- Form to input a new date -->
+    <form action="" method="post">
+        <label for="date">Enter a date (YYYY-MM-DD):</label>
+        <input type="date" id="date" name="date" required>
+        <button type="submit">Change Date</button>
+    </form>
+
+    <h1>Congrats! You found the secret on {{ date }}</h1>
+    
+    <p style="font-family: sans-serif;"><strong>{{secret_text}}</strong></p>
+
+    <p>xx Example image xx</p>
+    <img width="300" src="https://imagedelivery.net/X_BN-JDDL4T5Dab7aNGUKA/529daca9-5a40-478c-c25d-238ac8a9da00/public">
+
+    <footer><a href="https://agilend.net">agilend.net</a></footer>
 </body>
 </html>
