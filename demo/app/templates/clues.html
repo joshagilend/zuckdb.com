@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Clues</h2>
+{% if clues %}
+    <ul>
+    {% for clue in clues %}
+        <li>{{ clue }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No clues available at the moment.</p>
+{% endif %}
+{% endblock %}

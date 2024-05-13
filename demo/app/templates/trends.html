@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Trends Analysis</h2>
+{% if trends %}
+    <ul>
+    {% for trend in trends %}
+        <li>{{ trend }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No trends available at the moment.</p>
+{% endif %}
+{% endblock %}
