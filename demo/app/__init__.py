@@ -5,9 +5,6 @@ from flask import Flask
 SUPABASE_URL = os.environ.get("RETROSCOPE_DEMO_SUPABASE_URL")
 SUPABASE_KEY =  os.environ.get("RETROSCOPE_DEMO_SUPABASE_API_KEY")
 
-print(SUPABASE_URL)
-print(SUPABASE_KEY)
-
 def create_app():
     app = Flask(__name__)
 
